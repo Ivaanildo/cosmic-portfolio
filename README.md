@@ -249,12 +249,12 @@ Contribuições são bem-vindas! Sinta-se à vontade para:
 ## 📞 Contato
 
 - **GitHub**: [@Ivaanildo](https://github.com/Ivaanildo)
-- **Email**: [seu.email@exemplo.com](mailto:seu.email@exemplo.com)
-- **LinkedIn**: [Ivanildo Nogueira Lima](https://linkedin.com/in/seu-perfil)
-- **Website**: [https://ivaanildo.github.io/cosmic-portfolio/](https://ivaanildo.github.io/cosmic-portfolio/)
-
+- **Email**: [](mailto:rodriguesivanildo@live.com)
+- **LinkedIn**: [Ivanildo Nogueira Lima]([https://linkedin.com/in/seu-perfil](https://www.linkedin.com/in/ivanildo-nogueira-459550211/))
+- **Website**: " em construção "
+- **twitter** : [](https://x.com/Ivanildo_BDS)
+  
 ## 🙏 Agradecimentos
-
 - **Font Awesome** - Pelos ícones incríveis
 - **Google Fonts** - Pelas fontes modernas
 - **Inspiração** - Comunidade de desenvolvedores que compartilham conhecimento
