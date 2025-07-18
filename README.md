@@ -40,4 +40,3 @@ Portfólio pessoal com tema universo, design moderno e responsivo. Inclui efeito
   - Font Awesome (ícones)
   - Google Fonts (tipografia)
 
-## Estrutura de Arquivos
