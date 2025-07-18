@@ -7,8 +7,8 @@
 Um portfólio web moderno e interativo com tema espacial, criado com HTML5, CSS3 e JavaScript vanilla.
 
 ## 🚀 Demonstração
-<img width="1887" height="932" alt="Print2" src="https://github.com/user-attachments/assets/cf23b01f-eeae-4a85-84f8-e9147521da04" />
-<img width="1886" height="927" alt="Print1" src="https://github.com/user-attachments/assets/eaca4653-7fb1-4fb9-9ef3-11e5292b4ad6" />
+
+![Captura de tela_18-7-2025_32125_127 0 0 1](https://github.com/user-attachments/assets/a2abc984-f1c9-434d-b20e-f087bebcdf28)
 
 
 ## 📋 Características
