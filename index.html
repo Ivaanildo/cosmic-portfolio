@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CosmicDev | Portfólio Tecnológico</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;800&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Efeito de fundo espacial -->
+    <div class="space-background" id="spaceBackground"></div>
+    
+    <!-- Elemento de rastro do mouse -->
+    <div class="mouse-trail" id="mouseTrail"></div>
+    
+    <!-- Cabeçalho -->
+    <header>
+        <div class="logo">
+            <i class="fas fa-infinity"></i>
+            <span>CosmicDev</span>
+        </div>
+        
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </div>
+        
+        <nav>
+            <ul id="navMenu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#skills">Habilidades</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Seção Hero -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Explorando o <span>universo digital</span></h1>
+            <p>Sou um desenvolvedor apaixonado por criar experiências digitais inovadoras que transcendem os limites do possível. Cada linha de código é uma jornada cósmica em busca da excelência.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Ver Projetos</a>
+                <a href="#contact" class="btn btn-secondary">Contato</a>
+            </div>
+        </div>
+        
+        <div class="hero-image">
+            <div class="solar-system">
+                <div class="sun"></div>
+                <div class="planet" id="earth"></div>
+                <div class="planet" id="moon"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Sobre -->
+    <section id="about">
+        <h2 class="section-title">Sobre Mim</h2>
+        <div class="about">
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Olá, eu sou Ivanildo Nogueira Lima, um Desenvolvedor Frontend e Backend com paixão por criar soluções inovadoras. Com mais de 5 anos de experiência, já trabalhei em diversos projetos que desafiam os limites da tecnologia.</p>
+                    <p>Minha jornada no desenvolvimento web começou quando decidi transformar minha curiosidade pelo universo digital em uma carreira. Desde então, venho explorando galáxias de códigos e constelações de frameworks.</p>
+                    <p>Acredito que a tecnologia é a ferramenta mais poderosa que temos para moldar o futuro, e estou comprometido em criar experiências que inspirem e transformem.</p>
+                </div>
+                
+                <div class="skills">
+                    <div class="skill">
+                        <i class="fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Desenvolvimento frontend e backend com as mais modernas tecnologias JS.</p>
+                    </div>
+                    
+                    <div class="skill">
+                        <i class="fab fa-react"></i>
+                        <h3>React & Vue</h3>
+                        <p>Criação de interfaces dinâmicas e responsivas com frameworks modernos.</p>
+                    </div>
+                    
+                    <div class="skill">
+                        <i class="fas fa-server"></i>
+                        <h3>Backend</h3>
+                        <p>Desenvolvimento de APIs robustas com Node.js, Express e bancos de dados.</p>
+                    </div>
+                    
+                    <div class="skill">
+                        <i class="fas fa-mobile-alt"></i>
+                        <h3>Responsivo</h3>
+                        <p>Sites que se adaptam perfeitamente a qualquer dispositivo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Projetos -->
+    <section id="projects">
+        <h2 class="section-title">Meus Projetos</h2>
+        
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>Galaxy Explorer</h3>
+                    <p>Uma plataforma interativa que permite explorar o sistema solar em 3D com informações detalhadas sobre cada planeta.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Three.js</span>
+                        <span class="tech">React</span>
+                        <span class="tech">WebGL</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>Cosmic Dashboard</h3>
+                    <p>Painel de administração com tema espacial para monitoramento de dados em tempo real com visualizações interativas.</p>
+                    <div class="tech-stack">
+                        <span class="tech">Vue.js</span>
+                        <span class="tech">D3.js</span>
+                        <span class="tech">Firebase</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <div class="project-img"></div>
+                <div class="project-info">
+                    <h3>Astro E-commerce</h3>
+                    <p>Plataforma de comércio eletrônico com experiência de usuário imersiva e fluxo de compra otimizado.</p>
+                    <div class="tech-stack">
+                        <span class="tech">React</span>
+                        <span class="tech">Node.js</span>
+                        <span class="tech">MongoDB</span>
+                    </div>
+                    <a href="#" class="btn btn-secondary">Ver Detalhes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Contato -->
+    <section id="contact">
+        <h2 class="section-title">Entre em Contato</h2>
+        
+        <div class="contact-form">
+            <form>
+                <div class="form-group">
+                    <label for="name">Nome</label>
+                    <input type="text" id="name" placeholder="Seu nome">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="seu.email@exemplo.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Mensagem</label>
+                    <textarea id="message" placeholder="Sua mensagem..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2023 CosmicDev. Todos os direitos reservados.</p>
+        <p>Explorando novas fronteiras digitais.</p>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/stars.js"></script>
+    <script src="js/mouseTrail.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

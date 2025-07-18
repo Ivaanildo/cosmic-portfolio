@@ -1,0 +1,38 @@
+{
+  "name": "cosmic-portfolio",
+  "version": "1.0.0",
+  "description": "Um portfólio web moderno e interativo com tema espacial",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve .",
+    "dev": "npx live-server .",
+    "build": "echo 'Building project...' && echo 'Project built successfully!'",
+    "deploy": "echo 'Deploying to GitHub Pages...'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Ivaanildo/cosmic-portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "web",
+    "html",
+    "css",
+    "javascript",
+    "animation",
+    "responsive",
+    "cosmic",
+    "space",
+    "frontend"
+  ],
+  "author": "Ivanildo Nogueira Lima",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ivaanildo/cosmic-portfolio/issues"
+  },
+  "homepage": "https://ivaanildo.github.io/cosmic-portfolio/",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "serve": "^14.2.1"
+  }
+}

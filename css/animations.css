@@ -1,0 +1,294 @@
+/* Animações CSS */
+
+/* Animação das estrelas */
+@keyframes twinkle {
+    0%, 100% { opacity: 0.1; transform: scale(0.5); }
+    50% { opacity: 1; transform: scale(1.2); }
+}
+
+.star {
+    animation: twinkle var(--duration) infinite ease-in-out;
+}
+
+/* Estrelas cadentes */
+.shooting-star {
+    position: absolute;
+    height: 2px;
+    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, var(--neon-blue) 50%, rgba(255,255,255,0) 100%);
+    transform: rotate(-45deg);
+    filter: drop-shadow(0 0 5px var(--neon-blue));
+    animation: shootingStar linear forwards;
+    z-index: -1;
+}
+
+@keyframes shootingStar {
+    0% {
+        opacity: 0;
+        transform: rotate(-45deg) translateX(0) translateY(0);
+    }
+    5% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(-45deg) translateX(1000px) translateY(-1000px);
+    }
+}
+
+/* Animação do logo */
+@keyframes neonGlow {
+    from { text-shadow: 0 0 5px var(--neon-blue), 0 0 10px rgba(0, 229, 255, 0.5); }
+    to { text-shadow: 0 0 15px var(--neon-blue), 0 0 30px rgba(0, 229, 255, 0.8), 0 0 45px var(--neon-pink); }
+}
+
+.logo {
+    animation: neonGlow 2s infinite alternate;
+}
+
+/* Animação do título principal */
+@keyframes titleGlow {
+    0% { text-shadow: 0 0 5px rgba(0, 229, 255, 0.3); }
+    100% { text-shadow: 0 0 20px rgba(0, 229, 255, 0.8), 0 0 40px rgba(106, 17, 203, 0.6); }
+}
+
+.hero h1 {
+    animation: titleGlow 3s infinite alternate;
+}
+
+/* Animação do sol */
+@keyframes pulse {
+    0% { box-shadow: 0 0 50px #ff2e00, 0 0 100px rgba(255, 46, 0, 0.7); }
+    100% { box-shadow: 0 0 70px #ff2e00, 0 0 150px rgba(255, 46, 0, 0.9); }
+}
+
+.sun {
+    animation: pulse 4s infinite alternate;
+}
+
+/* Animação de órbita dos planetas */
+@keyframes orbit {
+    from { transform: translate(-50%, -50%) rotate(0deg) translateX(150px) rotate(0deg); }
+    to { transform: translate(-50%, -50%) rotate(360deg) translateX(150px) rotate(-360deg); }
+}
+
+#earth {
+    animation: orbit 20s linear infinite;
+}
+
+#moon {
+    animation: orbit 5s linear infinite;
+}
+
+/* Animações de entrada para as seções */
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Aplicar animações aos elementos */
+.hero-content {
+    animation: slideInFromLeft 1s ease-out;
+}
+
+.hero-image {
+    animation: slideInFromRight 1s ease-out 0.3s both;
+}
+
+.section-title {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.skill {
+    animation: scaleIn 0.6s ease-out;
+    animation-fill-mode: both;
+}
+
+.skill:nth-child(1) { animation-delay: 0.1s; }
+.skill:nth-child(2) { animation-delay: 0.2s; }
+.skill:nth-child(3) { animation-delay: 0.3s; }
+.skill:nth-child(4) { animation-delay: 0.4s; }
+
+.project-card {
+    animation: fadeInUp 0.8s ease-out;
+    animation-fill-mode: both;
+}
+
+.project-card:nth-child(1) { animation-delay: 0.2s; }
+.project-card:nth-child(2) { animation-delay: 0.4s; }
+.project-card:nth-child(3) { animation-delay: 0.6s; }
+
+/* Animações de hover */
+@keyframes buttonGlow {
+    0% { box-shadow: 0 0 5px var(--neon-blue); }
+    50% { box-shadow: 0 0 20px var(--neon-blue), 0 0 30px var(--neon-pink); }
+    100% { box-shadow: 0 0 5px var(--neon-blue); }
+}
+
+.btn:hover {
+    animation: buttonGlow 1.5s infinite;
+}
+
+/* Animação de flutuação */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.solar-system {
+    animation: float 6s ease-in-out infinite;
+}
+
+/* Animação de rotação suave */
+@keyframes rotate {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.logo i {
+    animation: rotate 20s linear infinite;
+}
+
+/* Animação de fade in para elementos que aparecem no scroll */
+.fade-in {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animação de loading */
+@keyframes loading {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.loading {
+    animation: loading 2s linear infinite;
+}
+
+/* Animação de ondulação */
+@keyframes ripple {
+    0% {
+        transform: scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(4);
+        opacity: 0;
+    }
+}
+
+.ripple-effect {
+    position: relative;
+    overflow: hidden;
+}
+
+.ripple-effect::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 5px;
+    height: 5px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transform: scale(0);
+    animation: ripple 0.6s linear;
+    pointer-events: none;
+}
+
+/* Animação de pulsação para elementos destacados */
+@keyframes heartbeat {
+    0% { transform: scale(1); }
+    14% { transform: scale(1.05); }
+    28% { transform: scale(1); }
+    42% { transform: scale(1.05); }
+    70% { transform: scale(1); }
+}
+
+.heartbeat {
+    animation: heartbeat 1.5s ease-in-out infinite;
+}
+
+/* Animação de texto digitando */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    0%, 50% { border-color: transparent; }
+    51%, 100% { border-color: var(--neon-blue); }
+}
+
+.typewriter {
+    overflow: hidden;
+    border-right: 3px solid var(--neon-blue);
+    white-space: nowrap;
+    animation: typing 3s steps(40, end), blink 1s step-end infinite;
+}
+
+/* Animação de partículas */
+@keyframes particleFloat {
+    0% {
+        transform: translateY(0px) translateX(0px);
+        opacity: 0;
+    }
+    10% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) translateX(50px);
+        opacity: 0;
+    }
+}
+
+.particle {
+    animation: particleFloat 4s ease-out infinite;
+}
